@@ -2,6 +2,10 @@
 
 exports[`<Square /> test Should render game square 1`] = `
 <div>
-  <button />
+  <button
+    col={0}
+    onClick={[Function]}
+    row={0}
+  />
 </div>
 `;

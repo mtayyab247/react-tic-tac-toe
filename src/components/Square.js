@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Square = ({row, col, classAttr}) => {
+const Square = ({handleWinner, row, col, classAttr, boardState}) => {
     return(
         <div className={classAttr}>
-            <button></button>
+            <button onClick={() => handleWinner(row, col)} row={row} col={col}>
+                {
+                    parseInt(boardState[row][col]) > 0 ? "": boardState[row][col]
+                }
+            </button>
         </div>
     );
 };

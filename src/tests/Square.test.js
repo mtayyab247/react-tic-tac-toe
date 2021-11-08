@@ -10,7 +10,14 @@ Enzyme.configure({
 
 describe("<Square /> test", () => {
     it("Should render game square", () => {
-        const wrapper = shallow(<Square />);
+        const row = 0;
+        const col = 0;
+        const boardStates = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+        const wrapper = shallow(<Square boardState={boardStates} row={row} col={col} />);
         expect(toJson(wrapper)).toMatchSnapshot();
     });
 
