@@ -11,6 +11,7 @@ exports[`<Footer /> test Should render Restart and Result 1`] = `
   className="footer"
 >
   <Restart />
+  <GameResult />
 </div>
 `;
 
