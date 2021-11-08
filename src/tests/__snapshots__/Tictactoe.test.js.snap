@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tictactoe /> test Should render Tictactoe 1`] = `
+<div
+  className="ttt-wrapper"
+/>
+`;
