@@ -74,8 +74,10 @@ function Tictactoe() {
 
     if(selectionCount === 9 && !match) {
       setWinner("draw");
+      return;
     } else if(match) {
       setWinner(true);
+      return;
     }
 
     if(playerTurn === "Player 1") {
@@ -85,11 +87,25 @@ function Tictactoe() {
     }
   };
 
+  const handleFinish = () => {
+    setBoardState(
+      [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+      ]
+    );
+
+    setPlayerTurn("Player 1");
+    setWinner(false);
+    setSelectionCount(1);
+  };
+
   return (
     <div className="ttt-wrapper">
       <Header playerTurn={playerTurn} />
       <Board boardState={boardState} handleWinner={handleWinner} />
-      <Footer winner={winner} playerTurn={playerTurn} />
+      <Footer winner={winner} playerTurn={playerTurn} handleFinish={handleFinish} selectionCount={selectionCount}/>
     </div>
   );
 }

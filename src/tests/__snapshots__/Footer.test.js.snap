@@ -3,7 +3,14 @@
 exports[`<Footer /> test Should render Restart 1`] = `
 <div
   className="restart-wrapper"
-/>
+>
+  <button
+    className="hide restart"
+    onClick={[Function]}
+  >
+    Restart
+  </button>
+</div>
 `;
 
 exports[`<Footer /> test Should render Restart and Result 1`] = `
@@ -18,5 +25,7 @@ exports[`<Footer /> test Should render Restart and Result 1`] = `
 exports[`<Footer /> test Should render Result 1`] = `
 <div
   className="winner-wrapper"
-/>
+>
+  <h4 />
+</div>
 `;

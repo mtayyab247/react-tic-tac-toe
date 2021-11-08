@@ -3,11 +3,10 @@ import Restart from './Restart';
 import GameResult from './GameResult';
 import '../css/footer.css';
 
-const Footer = ({winner, playerTurn}) => {
-    
+const Footer = ({winner, playerTurn, handleFinish, selectionCount}) => {
     return(
         <div className="footer">
-            <Restart />
+            <Restart handleFinish={handleFinish} selectionCount={selectionCount} />
             <GameResult winner={winner} playerTurn={playerTurn} />
         </div>
     );

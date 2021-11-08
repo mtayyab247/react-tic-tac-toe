@@ -29,6 +29,11 @@ exports[`<Tictactoe /> test Should render Tictactoe 1`] = `
     }
     handleWinner={[Function]}
   />
-  <Footer />
+  <Footer
+    handleFinish={[Function]}
+    playerTurn="Player 1"
+    selectionCount={1}
+    winner={false}
+  />
 </div>
 `;
