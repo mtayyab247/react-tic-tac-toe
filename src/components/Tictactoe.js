@@ -13,10 +13,18 @@ function Tictactoe() {
     ]
   );
 
+  const [selectionCount, setSelectionCount] = useState(1);
+  const [playerTurn, setPlayerTurn] = useState("Player 1");
+  const [winner, setWinner] = useState(false);
+
+  const handleWinner = () => {
+
+  };
+
   return (
     <div className="ttt-wrapper">
-      <Header />
-      <Board boardState={boardState} />
+      <Header playerTurn={playerTurn} />
+      <Board boardState={boardState} handleWinner={handleWinner} />
       <Footer />
     </div>
   );

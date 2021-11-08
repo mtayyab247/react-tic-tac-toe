@@ -55,24 +55,6 @@ describe("<Square /> test", () => {
         expect(colVal).toEqual(0);
     });
 
-    it("should show have row and col attribute", () => {
-        const row = 0;
-        const col = 0;
-        const classAttr = "bb";
-        const onSubmitSpy = jest.fn();
-        const boardStates = [
-            [1, 2, 3],
-            [4, 5, 6],
-            [7, 8, 9]
-        ];
-
-        const wrapper = mount(<Square row={row} col={col} handleWinner={onSubmitSpy} classAttr={classAttr} boardState={boardStates} />);
-        const rowVal = wrapper.find("button").props().row;
-        const colVal = wrapper.find("button").props().col;
-        expect(rowVal).toEqual(0);
-        expect(colVal).toEqual(0);
-    });
-
     it("should show accept boardState", () => {
         const row = 0;
         const col = 0;
