@@ -13,6 +13,11 @@ describe("<Header /> test", () => {
         const wrapper = shallow(<Header playerTurn={"Player 1"} />);
         expect(toJson(wrapper)).toMatchSnapshot();
     });
+
+    it("should not render player turn if playturn prop not passed", () => {
+        const wrapper = shallow(<Header />);
+        expect(toJson(wrapper)).toMatchSnapshot();
+    });
 });
 
 
