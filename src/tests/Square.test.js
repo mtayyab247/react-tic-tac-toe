@@ -21,18 +21,20 @@ describe("<Square /> test", () => {
         expect(toJson(wrapper)).toMatchSnapshot();
     });
 
-    it("should call handleWinner on making choice", () => {
+    it("should call handleWinner method", () => {
         const row = 0;
         const col = 0;
+        const classAttr = "bb";
+        const handleWinner = jest.fn();
         const boardStates = [
             [1, 2, 3],
             [4, 5, 6],
             [7, 8, 9]
         ];
-        const onSubmitSpy = jest.fn();
-        const wrapper = shallow(<Square row={row} col={col} handleWinner={onSubmitSpy} classAttr={"bb br"} boardState={boardStates} />);
-        wrapper.find("button").simulate('click');
-        expect(onSubmitSpy).toHaveBeenLastCalledWith(0, 0);
+
+        const wrapper = mount(<Square row={row} col={col} handleWinner={handleWinner} classAttr={classAttr} boardState={boardStates} />);
+        wrapper.find('button').simulate('click');
+        expect(handleWinner.mock.calls.length).toBe(1);
     });
 });
 
