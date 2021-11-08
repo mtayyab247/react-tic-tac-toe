@@ -5,46 +5,51 @@ exports[`<Board /> test Should render game board and squares 1`] = `
   className="board"
 >
   <Square
+    classAttr="bb br"
     col={0}
     row={0}
   />
   <Square
+    classAttr="bb"
     col={1}
     row={0}
   />
   <Square
+    classAttr="bb bl"
     col={2}
     row={0}
   />
   <Square
+    classAttr="bb br"
     col={0}
     row={1}
   />
   <Square
+    classAttr="bb"
     col={1}
     row={1}
   />
   <Square
+    classAttr="bb bl"
     col={2}
     row={1}
   />
   <Square
+    classAttr="br"
     col={0}
     row={2}
   />
   <Square
+    classAttr=""
     col={1}
     row={2}
   />
   <Square
+    classAttr="bl"
     col={2}
     row={2}
   />
 </div>
 `;
 
-exports[`<Board /> test Should render game square 1`] = `
-<div
-  className="square"
-/>
-`;
+exports[`<Board /> test Should render game square 1`] = `<div />`;

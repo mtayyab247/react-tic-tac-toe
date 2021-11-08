@@ -3,5 +3,9 @@
 exports[`<Tictactoe /> test Should render Tictactoe 1`] = `
 <div
   className="ttt-wrapper"
-/>
+>
+  <Header />
+  <Board />
+  <Footer />
+</div>
 `;

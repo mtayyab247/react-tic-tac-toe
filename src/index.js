@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import Tictactoe from './components/Tictactoe';
-import Header from './components/Header';
+import Tictactoe from './components/Tictactoe';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    <Tictactoe />
   </React.StrictMode>,
   document.getElementById('root')
 );

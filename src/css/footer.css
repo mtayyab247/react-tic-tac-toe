@@ -1,0 +1,19 @@
+.ttt-wrapper .footer {
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+  
+.ttt-wrapper .footer .restart {
+    margin-bottom: 10px;
+    width: 100%;
+}
+  
+.ttt-wrapper .footer .restart.show {
+    display: block;
+}
+  
+.ttt-wrapper .footer .restart.hide {
+    display: none;
+}
