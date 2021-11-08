@@ -89,7 +89,7 @@ function Tictactoe() {
     <div className="ttt-wrapper">
       <Header playerTurn={playerTurn} />
       <Board boardState={boardState} handleWinner={handleWinner} />
-      <Footer />
+      <Footer winner={winner} playerTurn={playerTurn} />
     </div>
   );
 }
