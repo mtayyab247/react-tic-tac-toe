@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Footer /> test should render Restart 1`] = `
+<div
+  className="restart-wrapper"
+/>
+`;
+
 exports[`<Footer /> test should render Restart and Result 1`] = `
 <div
   className="footer"
-/>
+>
+  <Restart />
+</div>
 `;
