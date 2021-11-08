@@ -18,6 +18,11 @@ describe("<Header /> test", () => {
         const wrapper = shallow(<Header />);
         expect(toJson(wrapper)).toMatchSnapshot();
     });
+
+    it("should show player turn", () => {
+        const wrapper = shallow(<Header playerTurn={"Player 1"} />);
+        expect(wrapper.find('.turn').text()).toBe("Player 1");
+    });
 });
 
 
