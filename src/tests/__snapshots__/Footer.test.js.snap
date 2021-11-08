@@ -13,3 +13,9 @@ exports[`<Footer /> test should render Restart and Result 1`] = `
   <Restart />
 </div>
 `;
+
+exports[`<Footer /> test should render Result 1`] = `
+<div
+  className="winner-wrapper"
+/>
+`;
