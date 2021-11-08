@@ -5,3 +5,9 @@ exports[`<Board /> test Should render game board and squares 1`] = `
   className="board"
 />
 `;
+
+exports[`<Board /> test Should render game square 1`] = `
+<div
+  className="square"
+/>
+`;
